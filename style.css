@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: "Montserrat","sans-serif";
+    color: #494c5f;
+}
+.banner-img{
+    background-image: url(/bg-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.heading-primary {
+    font-size: 2rem;
+    text-align: center;
+    margin: 50px 0;
+    margin-bottom: auto;
+    }
+    
+    .top{
+        padding-top: 10px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    input, label{
+        display: inline-block;
+        vertical-align: middle;
+        margin: 10px 0;
+    }
+
+    .switch{
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+    }
+    
+ .switch input{
+     opacity: 0;
+     width: 0;
+     height: 0;
+ }
+
+ .slider {
+     position: absolute;
+     cursor: pointer;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background-color: #696fdd;
+     transform: translate(0px,0px);
+     transition: 0.6s ease transform, 0.6s box-shadow;
+ }
+
+ .slider:before{
+     position: absolute;
+     content: '';
+     height: 26px;
+     width: 26px;
+     left: 4px;
+     bottom: 4px;
+     background-color: #fff;
+     transition: 0.4s;
+ }
+ input:checked + .slider{
+     background-color: #696fdd;
+ }
+ input:focus + .slider{
+    box-shadow: 0 0 1px #696fdd;
+}
+input:checked + .slider:before{
+    transform: translateX(26px);
+}
+.slider.round{
+    border-radius: 34px;
+}
+.slider.round:before{
+    border-radius: 50%;
+}
+
+.plan-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.plan-section .plan{
+    width: 300px;
+    height: 370px;
+    text-align: center;
+    padding: 30px 20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0.6rem 1.6rem #b3b5c6s;
+}
+
+
+.plan-section .plan .plan-price {
+    font-size: 4rem;
+}
+
+.plan-section .plan .dollor {
+    font-size: 2rem;
+    font-weight: 400;
+    vertical-align: middle;
+}
+
+.plan-section .plan .plan-features .plan-item {
+    padding: 15px 0;
+    border-bottom:1px solid #907197;
+}
+.plan-section .plan .btn{
+display: block;
+background-color: #696fdd;
+padding: 10px;
+margin-top: 20px;
+color: #f6f6fe;
+border-radius: 5px;
+}
+
+.plan-section .plan .btn:hover{
+    background-color: #f6f6fe;
+    color: #494c5f;
+    border: 1px solid #696fdd;
+    font-weight: 900;
+}
+.plan-section .plan .btn-blue{
+    background-color: #f6f6fe;
+    color: #696fdd;
+}
+
+.plan-section .plan .btn-blue:hover{
+    background-color: #696fdd;
+    color: #f6f6fe;
+    border: 1px solid #f6f6fe;
+}
+
+
+.plan-section .basic{
+    background-color: #f6f6f6;
+}
+.plan-section .pro{
+    background-color: #696fdd;
+    color: #f6f6fe;
+    height: 400px;
+}
+.plan-section .Master{
+    background-color: #f6f6f6;
+}
